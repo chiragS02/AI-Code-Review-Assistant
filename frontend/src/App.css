@@ -1,0 +1,103 @@
+.app-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero {
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b9ebff;
+  margin: 0 0 0.25rem;
+}
+
+.subtitle {
+  max-width: 72ch;
+  margin: 0;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.review-form,
+.result {
+  background: rgba(5, 16, 34, 0.7);
+  border: 1px solid #22385d;
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #c3d6f6;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #2f4f80;
+  background: #05132a;
+  color: #e8f4ff;
+  border-radius: 8px;
+  padding: 0.7rem 0.8rem;
+  font-size: 0.95rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  margin-top: 0.4rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #041327;
+  background: linear-gradient(90deg, #4fd3ff, #7ef2d6);
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.result h2 {
+  margin-top: 0;
+}
+
+.result pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: Consolas, 'Courier New', monospace;
+  line-height: 1.45;
+}
+
+.placeholder {
+  color: #92a6c7;
+}
+
+.error {
+  color: #ff9b9b;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .panel {
+    grid-template-columns: 1fr;
+  }
+}
